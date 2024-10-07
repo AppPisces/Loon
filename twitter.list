@@ -1,0 +1,16 @@
+#规则数量:10
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,tweetdeck.com
+DOMAIN-SUFFIX,twimg.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twitter.jp
+DOMAIN-SUFFIX,vine.co
