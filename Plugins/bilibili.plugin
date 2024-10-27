@@ -4,6 +4,9 @@
 #!icon = https://raw.githubusercontent.com/AppPisces/Loon/main/Icons/app/bilibili.png
 #!date = 2024-10-26 13:05
 
+[General]
+force-http-engine-hosts = :8000
+
 [Rule]
 # 开屏广告
 URL-REGEX, ^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{32}-1-SPLASH, REJECT-DICT
