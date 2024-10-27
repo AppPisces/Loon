@@ -1,4 +1,4 @@
-// 2024-10-08 02:15
+// 2024-10-18 21:10
 
 const url = $request.url;
 const header = $request.headers;
@@ -16,7 +16,6 @@ if (isNetEase) {
     header["mconfig-info"] = $persistentStore.read("RuCu6_Music163_MConfigInfo");
     header["user-agent"] = $persistentStore.read("RuCu6_Music163_UserAgent");
   }
-
   $done({ headers: header });
 } else {
   $done({});
