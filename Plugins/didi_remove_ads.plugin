@@ -35,12 +35,12 @@ AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 #^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core response-body-json-replace data.order_cards.nav_list_card.data[2].icon_size small
 
 [Script]
-http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path = didichuxing.js, requires-body = true, tag = 移除广告
-http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path = didichuxing.js, requires-body = true, tag = 移除首页广告
-http-response ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList script-path = didichuxing.js, requires-body = true, tag = 移除广告
-http-response ^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList script-path = didichuxing.js, requires-body = true, tag = 移除广告
-http-response ^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout script-path = didichuxing.js, requires-body = true, tag = 移除广告
-http-response ^https:\/\/mapi\.xiaojukeji\.com\/passenger-wallet\/api\/v6\/wallet\/homepage\? script-path = didichuxing.js, requires-body = true, tag = 移除钱包广告
+http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path = https://raw.githubusercontent.com/AppPisces/Loon/main/Scripts/didichuxing.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path = https://raw.githubusercontent.com/AppPisces/Loon/main/Scripts/didichuxing.js, requires-body = true, tag = 移除首页广告
+http-response ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList script-path = https://raw.githubusercontent.com/AppPisces/Loon/main/Scripts/didichuxing.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList script-path = https://raw.githubusercontent.com/AppPisces/Loon/main/Scripts/didichuxing.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout script-path = https://raw.githubusercontent.com/AppPisces/Loon/main/Scripts/didichuxing.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/mapi\.xiaojukeji\.com\/passenger-wallet\/api\/v6\/wallet\/homepage\? script-path = https://raw.githubusercontent.com/AppPisces/Loon/main/Scripts/didichuxing.js, requires-body = true, tag = 移除钱包广告
 
 [MitM]
 hostname = common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, res.xiaojukeji.com, mapi.xiaojukeji.com, conf.diditaxi.com.cn ,api.udache.com ,123.207.209.*, 112.53.55.225,120.241.142.*,120.241.143.*,116.85.2.*, 116.85.3.*, 139.199.240.84
