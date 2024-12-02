@@ -20,18 +20,19 @@ if (url.includes("/other/pGetSceneList")) {
 }
 
 if (url.includes("/homepage/v1/core")) {
-  const keepNavIds = ['dache_anycar', 'driverservice', 'bike', 'pincheche', 'nav_more_v2'];
+  const keepNavIds = ['dache_anycar', 'carmate', 'driverservice', 'yuancheng', 'nav_more_v2'];
   if (obj.data && obj.data.order_cards && obj.data.order_cards.nav_list_card && obj.data.order_cards.nav_list_card.data) {
     obj.data.order_cards.nav_list_card.data = obj.data.order_cards.nav_list_card.data.filter(item => keepNavIds.includes(item.nav_id));
+  }
+  const length = obj.data.order_cards.nav_list_card.data.length;
+  if (length >= 3 && length <= 5) {
+    for (let i = 0; i < length; i++) {
+        obj.data.order_cards.nav_list_card.data[i].icon_size = "big";
+    }
   }
   const keepBottomNavIds = ['v6x_home', 'home_page', 'user_center'];
   if (obj.data && obj.data.disorder_cards && obj.data.disorder_cards.bottom_nav_list && obj.data.disorder_cards.bottom_nav_list.data) {
     obj.data.disorder_cards.bottom_nav_list.data = obj.data.disorder_cards.bottom_nav_list.data.filter(item => keepBottomNavIds.includes(item.id));
-  }
-  if (obj.data && obj.data.order_cards && obj.data.order_cards.nav_list_card && obj.data.order_cards.nav_list_card.data) {
-    obj.data.order_cards.nav_list_card.data[2].icon_size = "big";
-    obj.data.order_cards.nav_list_card.data[3].icon_size = "big";
-    obj.data.order_cards.nav_list_card.data[4].icon_size = "big";
   }
 }
 
