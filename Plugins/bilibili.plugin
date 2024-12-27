@@ -3,7 +3,6 @@
 #!author = Maasea[https://github.com/Maasea], RuCu6[https://github.com/RuCu6], kokoryh[https://github.com/kokoryh], 可莉🅥[https://gitlab.com/lodepuly/vpn_tool]
 #!icon = https://raw.githubusercontent.com/AppPisces/Loon/main/Icons/app/bilibili.png
 #!date = 2024-10-26 13:05
-#!select = [动态]中[最常访问]的显示方式, auto, true, false
 
 #[General]
 #force-http-engine-hosts = :8000
