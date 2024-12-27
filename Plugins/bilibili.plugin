@@ -8,6 +8,9 @@
 #[General]
 #force-http-engine-hosts = :8000
 
+[Argument]
+Dynamic= [最常访问] = auto, true, false
+
 [Rule]
 # 开屏广告
 URL-REGEX,"^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{32}-1-SPLASH",REJECT-DICT
@@ -101,3 +104,6 @@ http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/(?:mine|myinfo) scr
 
 [MITM]
 hostname = ap*.bilibili.com, grpc.biliapi.net, www.bilibili.com, m.bilibili.com, *live.bilibili.com
+
+
+http-response ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/DynAll$ script-path=https://kelee.one/Resource/Script/Bilibili/Bilibili_proto_kokoryh.js, requires-body=true, binary-body-mode=true, tag=移除动态页面广告
