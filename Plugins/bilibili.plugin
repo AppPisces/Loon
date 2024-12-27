@@ -9,7 +9,7 @@
 #force-http-engine-hosts = :8000
 
 [Argument]
-Dynamic= [最常访问] = auto, true, false
+select = [最常访问] ,auto, true, false
 
 [Rule]
 # 开屏广告
