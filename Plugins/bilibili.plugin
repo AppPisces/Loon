@@ -9,7 +9,7 @@
 #force-http-engine-hosts = :8000
 
 [Argument]
-[最常访问] = switch,"auto","true","false", tag = [动态]中[最常访问]的显示方式
+dynamic[最常访问] = switch,"auto","true","false", tag = [动态]中[最常访问]的显示方式
 
 [Rule]
 # 开屏广告
